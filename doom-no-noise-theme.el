@@ -29,6 +29,7 @@
    (base9      '("#ff0000"))
    (fg         '("#d7d5d1"))
    (fg-alt     (doom-lighten fg 0.15))
+   (white      '("#ffffff"))
 
    (grey       fg)
    (red        fg)
@@ -89,7 +90,10 @@
    (hl-line :background base8)
    ((line-number &override) :foreground base3)
    ((line-number-current-line &override) :foreground base2)
-   (swiper-match-face-2 :foreground base9)
+
+
+   (swiper-match-face-2 :foreground white)
+
    (mode-line
     :background modeline-bg :foreground modeline-fg
     :box (if -modeline-pad `(:line-width ,-modeline-pad :color ,modeline-bg)))
