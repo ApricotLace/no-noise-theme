@@ -83,7 +83,10 @@
   ;;;; Base theme face overrides
   ((error   :underline `(:style wave :color ,error))
    (warning :underline `(:style wave :color ,warning))
-   ((font-lock-constant-face &override)      :slant 'italic)
+   ((font-lock-constant-face &override)
+    :slant 'italic
+    :foreground base2
+    :background (doom-darken base2 0.85))
    ((font-lock-comment-face &override)       :slant 'italic)
    ((font-lock-function-name-face &override) :slant 'italic)
    ((font-lock-type-face &override)          :slant 'italic)
