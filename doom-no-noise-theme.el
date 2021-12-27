@@ -113,7 +113,7 @@
    (ivy-posframe :background bg-alt)
    ;;;; magit
    ((magit-diff-added-highlight &override)   :foreground fg :background (doom-blend vc-added bg 0.3))
-   ((magit-diff-removed &override)           :foreground (doom-lighten fg 0.4) :background (doom-blend vc-deleted bg 0.1))
+   ((magit-diff-removed &override)           :foreground (doom-darken fg 0.4) :background (doom-blend vc-deleted bg 0.1))
    ((magit-diff-removed-highlight &override) :foreground fg :background (doom-blend vc-deleted bg 0.22))
    ;;;; lsp-mode
    (lsp-headerline-breadcrumb-symbols-face :foreground keywords :weight 'bold)
