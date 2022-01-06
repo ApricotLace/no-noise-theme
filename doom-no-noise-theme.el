@@ -78,22 +78,23 @@
    (modeline-bg-inactive     (doom-darken bg-alt 0.1))
    (modeline-bg-inactive-alt bg-alt)
    (modeline-fg              fg)
-   (modeline-fg-alt          (doom-darken modeline-bg-inactive 0.35)))
+   (modeline-fg-alt          (doom-darken white 0.35)))
 
   ;;;; Base theme face overrides
   ((error   :underline `(:style wave :color ,error))
    (warning :underline `(:style wave :color ,warning))
    ((font-lock-constant-face &override)
     :slant 'italic
-    :foreground base2
-    :background (doom-darken base2 0.85))
+    :background (doom-darken white 0.92))
    ((font-lock-comment-face &override)       :slant 'italic)
    ((font-lock-function-name-face &override) :slant 'italic)
    ((font-lock-type-face &override)          :slant 'italic)
-   (hl-line :background base8)
+   (hl-line :background (doom-darken base2 0.8))
    ((line-number &override) :foreground base3)
    ((line-number-current-line &override) :foreground base2)
 
+
+   (internal-border :background base2)
 
    (swiper-match-face-2 :foreground white)
 
