@@ -89,7 +89,7 @@
    ((font-lock-comment-face &override)       :slant 'italic)
    ((font-lock-function-name-face &override) :slant 'italic)
    ((font-lock-type-face &override)          :slant 'italic)
-   (hl-line :background (doom-darken base2 0.8))
+   (hl-line :background (doom-darken base2 0.9))
    ((line-number &override) :foreground base3)
    ((line-number-current-line &override) :foreground base2)
 
